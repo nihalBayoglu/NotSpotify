@@ -11,10 +11,4 @@
     <Folder Include="MVVM\ViewModel\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="Theme\Spotify.ListViewTheme">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-  </ItemGroup>
-
 </Project>
