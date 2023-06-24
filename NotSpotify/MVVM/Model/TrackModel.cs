@@ -77,6 +77,8 @@ namespace NotSpotify.MVVM.Model
 
         [JsonProperty("artists")]
         public Artist[] Artists { get; set; }
+
+        public string Duration { get; set; }
     }
 
     public partial class Artist

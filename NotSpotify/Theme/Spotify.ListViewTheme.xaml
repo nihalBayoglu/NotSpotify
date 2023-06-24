@@ -40,13 +40,13 @@
                             </Style>
                         </DockPanel.Style>
 
-                        <Image Source="{Binding }" Width="50" Height="50" DockPanel.Dock="Left" />
+                        <Image Source="{Binding Images[2].Url}" Width="50" Height="50" DockPanel.Dock="Left" />
 
                         <StackPanel Margin="4 0 0 0">
-                            <TextBlock Text="{Binding }" Foreground="White"
+                            <TextBlock Text="{Binding Name}" Foreground="White"
                                        FontSize="14"
                                        FontWeight="Medium"/>
-                            <TextBlock Text="{Binding }" Foreground="Gray" 
+                            <TextBlock Text="{Binding Artists[0].Name}" Foreground="Gray" 
                                        FontSize="14" />
                         </StackPanel>
 
@@ -57,6 +57,27 @@
                 </DataTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
 
+    <Style x:Key="RepeatButtonTransparent" TargetType="{x:Type RepeatButton}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton }">
+                    <Rectangle Fill="{TemplateBinding Background}" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ScrollbarButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton }">
+                    <Rectangle Fill="{TemplateBinding Background}" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>
