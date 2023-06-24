@@ -25,7 +25,7 @@ namespace NotSpotify.MVVM.ViewModel
             var client = new RestClient();
 
             var request = new RestRequest("https://api.spotify.com/v1/browse/new-releases", Method.Get);
-            request.AddHeader("Authorization", "Bearer BQCL2btC9kD3Gi-H9DHXq8_KqAE8vJgq8ziy_6HUZKVvcWL8anLIANDxqj302X-08pIoEnR4FgCYsH7DKGXujFZyzNgVzNXuNMRbat7glIF5UyTbehA");
+            request.AddHeader("Authorization", "Bearer xAxxxx");
 
             var response = client.GetAsync(request).GetAwaiter().GetResult();
             var data = JsonConvert.DeserializeObject<TrackModel>(response.Content);
